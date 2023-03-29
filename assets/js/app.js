@@ -46,7 +46,15 @@ createApp({
         if (this.activeImage === this.posters.length){
             this.activeImage = 0
         }
+    },
+    autoImg(){
+        setInterval(() => {
+            this.next()
+        }, 1000);
     }
+  },
+  created(){
+    this.autoImg()
   }
 }).mount('#app')
 
