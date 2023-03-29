@@ -11,18 +11,18 @@
 </head>
 <body>
     <div id="app">
-        
+
         <h1 class="text-center">Slider</h1>
 
         <div class="container-xs position-relative">
             <div class="card">
-                <img :src="posters.image[activeImage]" alt="">
+                <img :src="" alt="" v-for="(image, index) in posters">
             </div>
             <div class="card-body position-absolute">
-                    <h3>{{posters.title}}</h3>
-                    <p>{{posters.description}}</p>    
+                    <h3></h3>
+                    <p></p>    
             </div>
-            <div class="thumbnails ">
+            <div class="thumbnails">
                 <img src="" alt="">
             </div>
             <nav class="d-flex justify-content-between">
