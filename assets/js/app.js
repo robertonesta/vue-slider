@@ -54,7 +54,7 @@ createApp({
         autoplay(){
             this.idInterval = setInterval(() => {
                 this.next()
-            }, 500);
+            }, 3000);
         },
         stopImg(){
             clearInterval(this.idInterval)

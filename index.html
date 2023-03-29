@@ -15,18 +15,18 @@
         <h1 class="text-center">Slider</h1>
 
         <div class="container-xs">
-            <div class="card position-relative" @mouseover="stopImg" @mouseleave="autoplay">
+            <div class="card" @mouseover="stopImg" @mouseleave="autoplay">
                 <img :src="posters[activeImage].image" alt="">
-                <div class="card-body position-absolute">
-                    <h3>{{posters[activeImage].title}}</h3>
-                    <p>{{posters[activeImage].description}}</p>    
-                </div>
+            </div>
+            <div class="card-body">
+                <h3>{{posters[activeImage].title}}</h3>
+                <p>{{posters[activeImage].description}}</p>    
             </div>
             <div class="thumbnails">
                 <img @click="thumbNailClick(index)" :class="index === activeImage ? 'active' : ''" :src="image.image" alt=""
                 v-for="(image, index) in posters">
             </div>
-            <nav class="d-flex justify-content-between">
+            <nav class="d-flex my-3 justify-content-between">
                 <button @click="prev" class="rounded-5">
                     <i class="fa-solid fa-circle-chevron-left"></i>
                 </button>
