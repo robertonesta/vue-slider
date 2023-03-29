@@ -4,15 +4,19 @@
     margin: auto;
 }
 
-.card-body{
-    bottom: 8%;    
-}
-
-.card-body h3, .card-body p{
+.card h3, .card p{   
     padding: 0 1rem;
     color: rgb(180, 179, 179);
-    font-style: italic;
+    font-style: italic; 
 }
+.card img{
+    max-width: 100%;
+}
+
+.card-body{
+    top: 100%;
+}
+
 
 .thumbnails img{
     width: calc(100% / 5);    
