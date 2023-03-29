@@ -48,6 +48,9 @@ createApp({
                 this.activeImage = 0
             }
         },
+        thumbNailClick(index){
+            this.activeImage = index
+        },
         autoplay(){
             this.idInterval = setInterval(() => {
                 this.next()

@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="thumbnails">
-                <img :class="index === activeImage ? 'active' : ''" :src="image.image" alt=""
+                <img @click="thumbNailClick(index)" :class="index === activeImage ? 'active' : ''" :src="image.image" alt=""
                 v-for="(image, index) in posters">
             </div>
             <nav class="d-flex justify-content-between">
