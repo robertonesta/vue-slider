@@ -11,15 +11,16 @@
 </head>
 <body>
     <div id="app">
+        
         <h1 class="text-center">Slider</h1>
 
         <div class="container-xs position-relative">
             <div class="card">
-                <img src="./assets/img/01.webp" alt="">
+                <img :src="posters.image[activeImage]" alt="">
             </div>
             <div class="card-body position-absolute">
-                    <h3></h3>
-                    <p class="description"></p>    
+                    <h3>{{posters.title}}</h3>
+                    <p>{{posters.description}}</p>    
             </div>
             <div class="thumbnails ">
                 <img src="" alt="">
@@ -32,7 +33,6 @@
                     <i class="fa-solid fa-circle-chevron-right"></i>
                 </button>
             </nav>
-           
 
         </div>
     </div>
