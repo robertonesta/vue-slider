@@ -15,6 +15,9 @@
 }
 
 .thumbnails img{
-    width: calc(100% / 5);
-    
+    width: calc(100% / 5);    
+}
+
+.thumbnails img:not(.active){
+    opacity: 50%;
 }

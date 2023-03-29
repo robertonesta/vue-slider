@@ -16,14 +16,15 @@
 
         <div class="container-xs position-relative">
             <div class="card">
-                <img :src="" alt="" v-for="(image, index) in posters">
+                <img :src="posters[activeImage].image" alt="">
             </div>
             <div class="card-body position-absolute">
-                    <h3></h3>
-                    <p></p>    
+                    <h3>{{posters[activeImage].title}}</h3>
+                    <p>{{posters[activeImage].description}}</p>    
             </div>
             <div class="thumbnails">
-                <img src="" alt="">
+                <img class="" :class="index === activeImage ? 'active' : ''" :src="image.image" alt=""
+                v-for="(image, index) in posters">
             </div>
             <nav class="d-flex justify-content-between">
                 <button class="rounded-5">
